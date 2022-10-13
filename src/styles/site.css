@@ -1,0 +1,161 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/* Remove arrrows from number input  */
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide the first selector data */
+
+.form-select option:first-child {
+  display: none;
+}
+
+/* Fix bug with input-group with selector inside */
+
+#divQualificationLevelSelector,
+#divLevelSelector {
+  max-width: 18%;
+}
+
+/* #divQualificationLevelSelector {
+  max-width: 28%;
+} */
+
+#divFloating {
+  max-width: 15.333%;
+}
+
+/* Fixed addUser modal form width */
+
+#addUserModalContainer {
+  min-width: 960px;
+}
+
+#addUserForm {
+  width: 902px;
+}
+
+/* fixed floating input group height */
+
+#addUserFormHiddenDiv {
+  height: 29px;
+}
+
+.input-group {
+  height: 58px;
+}
+
+/* Reverted colors for validation tooltip messages */
+
+.invalid-tooltip {
+  background-color: inherit;
+  color: #dc3545;
+}
+
+/* Keeping scrollbar visible */
+
+#JobStatisticsTable::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+#JobStatisticsTable::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #dee2e6;
+  -webkit-box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+/* First column in time statistics page was made wider */
+
+#ProjectColumn {
+  min-width: 300px;
+}
+
+/* Custom modal closing handling */
+
+#addChargelineModal,
+#addBudgetModal,
+#addProjectModal,
+#addCustomerModal,
+#addUserModal {
+  display: block;
+}
+
+.hidden {
+  visibility: hidden;
+}

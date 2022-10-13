@@ -1,26 +1,80 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom'
+import AddProjectPageBody from './components/AddProjectPageBody'
+import AddUserPageBody from './components/AddUserPageBody'
+import HomePageBody from './components/HomePageBody'
+import LoginPageBody from './components/LoginPageBody'
+import PrivacyPageBody from './components/PrivacyPageBody'
+import RegisterPageBody from './components/RegisterPageBody'
+import TimeRegisterPageBody from './components/TimeRegisterPageBody'
+import CustomPage from './pages/CustomPage'
+import GetDataPage from './pages/GetDataPage'
+import './styles/site.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <CustomPage>
+              <HomePageBody />
+            </CustomPage>
+          }
+        />
+        <Route
+          path="/Privacy"
+          element={
+            <CustomPage>
+              <PrivacyPageBody />
+            </CustomPage>
+          }
+        />
+        {/* <Route
+          path="/Register"
+          element={
+            <CustomPage>
+              <RegisterPageBody />
+            </CustomPage>
+          }
+        /> */}
+        <Route
+          path="/Login"
+          element={
+            <CustomPage>
+              <LoginPageBody />
+            </CustomPage>
+          }
+        />
+        <Route
+          path="/AddUser"
+          element={
+            <CustomPage>
+              <AddUserPageBody />
+            </CustomPage>
+          }
+        />
+        <Route
+          path="/TimeRegister"
+          element={
+            <CustomPage>
+              <TimeRegisterPageBody />
+            </CustomPage>
+          }
+        />
+        <Route
+          path="/AddProject"
+          element={
+            <CustomPage>
+              <AddProjectPageBody />
+            </CustomPage>
+          }
+        />
+        <Route path="/GetData" element={<GetDataPage />} />
+      </Routes>
+      <div className="modal-backdrop fade hidden"></div>
+    </>
+  )
 }
 
-export default App;
+export default App
